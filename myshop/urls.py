@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # shop url包含了所有的路径,一定要写在shop之上
     path('cart/', include('cart.urls', namespace='cart')),
+    path('orders/', include('orders.urls', namespace='orders')),
     path('', include('shop.urls', namespace='shop')),
 
 ]
