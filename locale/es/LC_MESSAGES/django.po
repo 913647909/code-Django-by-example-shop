@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-30 14:06+0800\n"
+"POT-Creation-Date: 2018-08-30 14:35+0800\n"
 "PO-Revision-Date: 2018-08-30 14:21+0000\n"
 "Last-Translator: b'  <admin@qq.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,13 +27,47 @@ msgstr "Cantidad"
 msgid "Coupon"
 msgstr "Cupon"
 
-#: .\myshop\settings.py:149
+#: .\myshop\settings.py:150
 msgid "English"
 msgstr "Inglés"
 
-#: .\myshop\settings.py:150
+#: .\myshop\settings.py:151
 msgid "Spanish"
 msgstr "Español"
+
+#: .\myshop\urls.py:25
+msgid "payment/"
+msgstr ""
+
+#: .\myshop\urls.py:26
+msgid "cart/"
+msgstr ""
+
+#: .\myshop\urls.py:27
+msgid "orders/"
+msgstr ""
+
+#: .\myshop\urls.py:28
+msgid "admin/"
+msgstr ""
+
+#: .\myshop\urls.py:29
+#, fuzzy
+#| msgid "Coupon"
+msgid "coupons/"
+msgstr "Cupon"
+
+#: .\payment\urls.py:8
+msgid "process/"
+msgstr ""
+
+#: .\payment\urls.py:9
+msgid "done/"
+msgstr ""
+
+#: .\payment\urls.py:10
+msgid "canceled/"
+msgstr ""
 
 #: .\shop\templates\shop\base.html:7 .\shop\templates\shop\base.html:12
 msgid "My shop"
@@ -47,7 +81,8 @@ msgstr "Tu carro"
 #, python-format
 msgid ""
 "\n"
-"                    %(total_items)s item%(total_items_plural)s, $%(total_price)s\n"
+"                    %(total_items)s item%(total_items_plural)s, $"
+"%(total_price)s\n"
 "                "
 msgstr ""
 "\n"
@@ -114,8 +149,8 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\core\validators.py:246
 msgid ""
-"Enter a valid 'slug' consisting of Unicode letters, numbers, underscores, or"
-" hyphens."
+"Enter a valid 'slug' consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\core\validators.py:255
@@ -316,15 +351,15 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1290
 #, python-format
 msgid ""
-"'%(value)s' value has an invalid format. It must be in YYYY-MM-DD "
-"HH:MM[:ss[.uuuuuu]][TZ] format."
+"'%(value)s' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1294
 #, python-format
 msgid ""
-"'%(value)s' value has the correct format (YYYY-MM-DD "
-"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
+"'%(value)s' value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1298
@@ -343,8 +378,8 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1587
 #, python-format
 msgid ""
-"'%(value)s' value has an invalid format. It must be in [DD] "
-"[HH:[MM:]]ss[.uuuuuu] format."
+"'%(value)s' value has an invalid format. It must be in [DD] [HH:[MM:]]ss[."
+"uuuuuu] format."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1590
@@ -474,8 +509,7 @@ msgid "Many-to-many relationship"
 msgstr ""
 
 #. Translators: If found as last label character, these punctuation
-#. characters will prevent the default label_suffix to be appended to the
-#. label
+#. characters will prevent the default label_suffix to be appended to the label
 #: .\venv\Lib\site-packages\django\forms\boundfield.py:146
 msgid ":?.!"
 msgstr ""
@@ -525,8 +559,7 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:537
 #, python-format
-msgid ""
-"Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
 msgid_plural ""
 "Ensure this filename has at most %(max)d characters (it has %(length)d)."
 msgstr[0] ""
@@ -626,8 +659,7 @@ msgid "The inline value did not match the parent instance."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\models.py:1160
-msgid ""
-"Select a valid choice. That choice is not one of the available choices."
+msgid "Select a valid choice. That choice is not one of the available choices."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\models.py:1274
@@ -1109,11 +1141,11 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:124
 msgid ""
-"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or"
-" including the 'Referrer-Policy: no-referrer' header, please remove them. "
-"The CSRF protection requires the 'Referer' header to do strict referer "
-"checking. If you're concerned about privacy, use alternatives like <a "
-"rel=\"noreferrer\" ...> for links to third-party sites."
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the 'Referrer-Policy: no-referrer' header, please remove them. The "
+"CSRF protection requires the 'Referer' header to do strict referer checking. "
+"If you're concerned about privacy, use alternatives like <a rel=\"noreferrer"
+"\" ...> for links to third-party sites."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:132
@@ -1164,8 +1196,8 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:585
 #, python-format
 msgid ""
-"Future %(verbose_name_plural)s not available because "
-"%(class_name)s.allow_future is False."
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:619
@@ -1224,10 +1256,10 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:368
 #, python-format
 msgid ""
-"You are seeing this page because <a "
-"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
-"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> is in your settings file "
-"and you have not configured any URLs."
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
+"\">DEBUG=True</a> is in your settings file and you have not configured any "
+"URLs."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:383
